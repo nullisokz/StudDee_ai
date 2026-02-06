@@ -1,0 +1,10 @@
+flask
+flask-cors
+python-dotenv
+langchain
+langchain_classic
+langchain-chroma
+langchain-google-genai
+langchain-huggingface
+sentence-transformers
+pysqlite3-binary

@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./rag_backend
+    container_name: rag_backend_api
+    ports:
+      - "5001:5000"  # Vi mappar till 5001 på din dator för att slippa AirPlay-krockar!
+    env_file:
+      - ./rag_backend/.env
+    volumes:
+      - ./chroma_db:/app/chroma_db  # Kopplar din lokala db-mapp till containern
